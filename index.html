@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022 조예린 PORTFOLIO</title>
+    <!--파비콘 설정-->
+    <link rel="icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="css/fullpage.css">
+
+    <!--google material icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--lodash-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- gsap 애니메이션 제어/scroll/top -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="mypage">
+            <a href="https://github.com/aw0605" class="github" target="_blank">
+                <img src="img/github.png" alt="github">
+            </a>
+            <a href="https://blog.naver.com/aw0605" class="naverblog" target="_blank">
+                <img src="img/naverblog.png" alt="naverblog">
+            </a>
+        </div>
+
+        <!-- 토글버튼 -->
+        <div class="mopen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- 토글버튼 메뉴 -->
+        <div class="content">
+            <div class="con_top">
+                <a href="#home">Home</a>
+            </div>
+            <div class="con_center">
+                <ul class="menu01">
+                    <li><a href="#project01">
+                            <span class="con_num">Project 01</span>
+                            <span class="con_title">To Do List</span>
+                        </a></li>
+                    <li><a href="#project02">
+                            <span class="con_num">Project 02</span>
+                            <span class="con_title">영단어 게임</span>
+                        </a></li>
+                    <li><a href="#project03">
+                            <span class="con_num">Project 03</span>
+                            <span class="con_title">My Art Museum</span>
+                        </a></li>
+                    <li><a href="#project04">
+                            <span class="con_num">Project 04</span>
+                            <span class="con_title">Starship Ent</span>
+                        </a></li>
+                    <li><a href="#project05">
+                            <span class="con_num">Project 05</span>
+                            <span class="con_title">Starbucks</span>
+                        </a></li>
+                    <li><a href="#project06">
+                            <span class="con_num">Project 06</span>
+                            <span class="con_title">DESIGN</span>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="con_bottom">
+                <a href="#profile">Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HOME -->
+    <div id="fullpage">
+        <section class="section home">
+            <div class="vodbox">
+                <video src="img/Waves.mp4" autoplay muted loop></video>
+            </div>
+            <div class="title">
+                <h1 class="floating1">PORTFOLIO</h1>
+            </div>
+            <p><span id="year"></span> YERIN PORTFOLIO</p>
+        </section>
+
+
+        <!-- Work1 - Todo-List -->
+        <section class="section project01 scroll-spy">
+            <div class="wrap">
+                <!-- mockup -->
+                <div class="mock mock-n back-to-position to-right delay-0">
+                    <div class="pc-wrap">
+                        <img src="img/mockup-pc.png" alt="pc목업" class="pc">
+                        <figure class="pc_cover">
+                            <img src="img/mockup/todo-pc.png" alt="Todo-List PC화면">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- Todo-List 설명 -->
+                <div class="info">
+                    <div class="description back-to-position to-left delay-0">
+                        <div class="web_title">
+                            <p>REACT WEB</p>
+                            <h2>To Do List</h2>
+                        </div>
+                    <p class="m_hide">
+                        밝은 느낌을 주고자 하늘색을 메인 컬러로 사용하였습니다.
+                        또한, 자세한 설명이 없어도 쉽게 사용할 수 있도록 심플하게 디자인하여
+                        리액트로 제작했습니다.
+                    </p>
+                    <div class="tool">
+                        <h3>TOOL</h3>
+                        <P>
+                            javascript / React 
+                        </P>
+                    </div>
+                    <div class="hue">
+                        <h3>COLOR</h3>
+                        <span class="color">
+                            <span style="background: #83C5E2;"></span>
+                            <span style="background: #7FB8D2;"></span>
+                            <span style="background: #E0E1E4;"></span>
+                            <span style="background: #fff;"></span>
+                        </ul>
+                    </div>
+                    <div class="font">
+                        <h3>FONT</h3>
+                        <span>Noto Sans</span>
+                    </div>
+                    <div class="work">
+                        <h3>WORK</h3>
+                        <span>개인작업80%(1주)</span>
+                    </div>
+                    </div>
+
+                    <!-- 버튼 -->
+                    <ul class="btns back-to-position to-left delay-1">
+                        <li>
+                            <a href="https://aw0605.github.io/TodoList/" class="link_btn" target="_blank">VIEW ON WEB</a>
+                        </li>
+                        <li class="styleGuide">
+                            <a href="#modal1" class="btn">DESIGN GUIDE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- modal -->
+            <div class="modal" id="modal1">
+                <div class="modalcont modalcont1">
+                    <img src="img/modal/Todo-list.jpg" alt="Todo-list">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Work2 - Javascript game -->
+        <section class="section project02 scroll-spy">
+            <div class="wrap">
+                <!-- mockup -->
+                <div class="mock mock-n back-to-position to-right delay-0">
+                    <div class="pc-wrap">
+                        <img src="img/mockup-pc.png" alt="pc목업" class="pc">
+                        <figure class="pc_cover">
+                            <img src="img/mockup/JS_game-PC.png" alt="javascript-gamePC화면">
+                        </figure>
+                    </div>
+                    <div class="mobile-wrap">
+                        <img src="img/mockup-mo.png" alt="mo목업" class="mo">
+                        <figure class="mo_cover">
+                            <img class="m_img" src="img/mockup/JS_game-MO.png" alt="javascript-game모바일화면">
+                            <img class="mo_top" src="img/mo_top.png" alt="mo_top">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- Javascript-game 설명 -->
+                <div class="info">
+                    <div class="description  back-to-position to-left delay-0">
+                        <div class="web_title">
+                            <p>Javascript Game</p>
+                            <h2>영단어 게임</h2>
+                        </div>
+                        <p class="m_hide">
+                            별도의 설명 없이도 유저가 쉽게 이해하고 게임을 실행할 수 있도록
+                            심플하게 디자인하였으며 javascript를 이용하여 제작했습니다.
+                        </p>
+                    <div class="tool">
+                        <h3>TOOL</h3>
+                        <P>
+                            HTML5 / CSS3 / javascript 
+                        </P>
+                    </div>
+                    <div class="hue">
+                        <h3>COLOR</h3>
+                        <span class="color">
+                            <span style="background: #444;"></span>
+                            <span style="background: #3F66DB;"></span>
+                            <span style="background: #fff;"></span>
+                        </ul>
+                    </div>
+                    <div class="font">
+                        <h3>FONT</h3>
+                        <span>Nanum Gothic</span>
+                        <span>Open Sans</span>
+                    </div>
+                    <div class="work">
+                        <h3>WORK</h3>
+                        <span>개인작업80%(1주)</span>
+                    </div>
+                    </div>
+
+                    <!-- 버튼 -->
+                    <ul class="btns back-to-position to-left delay-1">
+                        <li>
+                            <a href="https://aw0605.github.io/Javascript-game/" class="link_btn" target="_blank">VIEW ON WEB</a>
+                        </li>
+                        <li class="styleGuide">
+                            <a href="#modal2" class="btn">DESIGN GUIDE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal" id="modal2">
+                <div class="modalcont modalcont2">
+                    <img src="img/modal/javascript-game.jpg" alt="javascript-game">
+                </div>
+            </div>
+
+            <!-- 돌아가는 원 -->
+            <figure class="turn-circle">
+                <div class="inner">
+                    <strong></strong>
+                    <span>small circle</span>
+                </div>
+            </figure>
+        </section>
+
+        <!-- Work3 - My Art Museum -->
+        <section class="section project03 scroll-spy">
+            <div class="wrap">
+                <!-- mockup -->
+                <div class="mock back-to-position to-right delay-0">
+                    <div class="pc-wrap">
+                        <img src="img/mockup-pc.png" alt="pc목업" class="pc">
+                        <figure class="pc_cover">
+                            <img src="img/mockup/MAM-PC.png" alt="My Art Museum PC화면">
+                        </figure>
+                    </div>
+                    <div class="mobile-wrap">
+                        <img src="img/mockup-mo.png" alt="mo목업" class="mo">
+                        <figure class="mo_cover">
+                            <img class="m_img" src="img/mockup/MAM-MO.png" alt="My Art Museum 모바일화면">
+                            <img class="mo_top" src="img/mo_top.png" alt="mo_top">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- My Art Museum 설명 -->
+                <div class="info">
+                    <div class="description back-to-position to-left delay-0">
+                    <div class="web_title">
+                        <p>Responsive Web1</p>
+                        <h2>My Art Museum</h2>
+                    </div>
+                    <p class="m_hide">
+                        전체적으로 심플하고 직관적으로 보이면서도
+                        사용자들에게 전시회에 대한 흥미를 끌 수 있도록
+                        사진과 영상들을 활용, Swiper Slider, lodash, gsap 등으로 반응형 웹을 제작했습니다.
+                    </p>
+                    <div class="tool">
+                        <h3>TOOL</h3>
+                        <P>
+                            HTML5 / CSS3 / javascript 
+                        </P>
+                    </div>
+                    <div class="hue">
+                        <h3>COLOR</h3>
+                        <span class="color">
+                            <span style="background: #FA4238;"></span>
+                            <span style="background: #90C31F;"></span>
+                            <span style="background: #FFFFFF;"></span>
+                        </ul>
+                    </div>
+                    <div class="font">
+                        <h3>FONT</h3>
+                        <span>Noto Sans</span>
+                        <span>Nanum Myenjo</span>
+                        <span>Open Sans</span>
+                    </div>
+                    <div class="work">
+                        <h3>WORK</h3>
+                        <span>개인작업100%(1주)</span>
+                    </div>
+                    </div>
+
+                    <!-- 버튼 -->
+                    <ul class="btns back-to-position to-left delay-1">
+                        <li>
+                            <a href="https://aw0605.github.io/My-Art-Museum/" class="link_btn" target="_blank">VIEW ON WEB</a>
+                        </li>
+                        <li class="styleGuide">
+                            <a href="#modal3" class="btn">DESIGN GUIDE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal" id="modal3">
+                <div class="modalcont modalcont3">
+                    <img src="img/modal/MAM.jpg" alt="myartmuseum">
+                </div>
+            </div>
+
+            <!-- 날아가는 원 -->
+            <div class="gooey">
+                gooey filter
+            </div>
+        </section>
+
+        <!-- Work4 - Starship -->
+        <section class="section project04 scroll-spy">
+            <div class="wrap">
+                <!-- mockup -->
+                <div class="mock back-to-position to-right delay-0">
+                    <div class="pc-wrap">
+                        <img src="img/mockup-pc.png" alt="pc목업" class="pc">
+                        <figure class="pc_cover">
+                            <img src="img/mockup/starship-pc.png" alt="starship PC화면">
+                        </figure>
+                    </div>
+                    <div class="mobile-wrap">
+                        <img src="img/mockup-mo.png" alt="mo목업" class="mo">
+                        <figure class="mo_cover">
+                            <img class="m_img" src="img/mockup/starship-mo.png" alt="starship 모바일화면">
+                            <img class="mo_top" src="img/mo_top.png" alt="mo_top">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- Starship 설명 -->
+                <div class="info">
+                    <div class="description back-to-position to-left delay-0">
+                        <div class="web_title">
+                            <p>Responsive Web2</p>
+                            <h2>Starship Ent</h2>
+                        </div>
+                        <p class="m_hide">
+                            Starship이 생각날 수 있도록 로고에서 가져온 오렌지색을 메인 컬러로 하였고
+                            사진이 많아 복잡해 보이지 않도록 간결하게 디자인, Swiper Slider와 Slick Slider을
+                            이용해 제작하였습니다.
+                        </p>
+                    <div class="tool">
+                        <h3>TOOL</h3>
+                        <P>
+                            Photoshop / Illustrator / Figma / HTML5 / CSS3 / javascript 
+                        </P>
+                    </div>
+                    <div class="hue">
+                        <h3>COLOR</h3>
+                        <span class="color">
+                            <span style="background: #f99503;"></span>
+                            <span style="background: #fff;"></span>
+                            <span style="background: #393937;"></span>
+                            <span style="background: #999;"></span>
+                            <span style="background: #ededed;"></span>
+                        </ul>
+                    </div>
+                    <div class="font">
+                        <h3>FONT</h3>
+                        <span>Noto Sans</span>
+                        <span>Nanum Gothic</span>
+                    </div>
+                    <div class="work">
+                        <h3>WORK</h3>
+                        <span>개인작업100%(2-3주)</span>
+                    </div>
+                    </div>
+
+                    <!-- 버튼 -->
+                    <ul class="btns back-to-position to-left delay-1">
+                        <li>
+                            <a href="https://aw0605.github.io/starship/" class="link_btn" target="_blank">VIEW ON WEB</a>
+                        </li>
+                        <li class="styleGuide">
+                            <a href="#modal4" class="btn">DESIGN GUIDE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" id="modal4">
+                <div class="modalcont modalcont4">
+                    <img src="img/modal/Starship.jpg" alt="starship">
+                </div>
+            </div>
+
+            <!-- 좌우 움직이는 원 -->
+            <div class="circlewrap">
+                <span></span>
+            </div>
+        </section>
+
+        <!-- Work5 - Starbucks PC -->
+        <section class="section project05 scroll-spy">
+            <!-- 돌아가는 원 -->
+            <figure class="turn-circle">
+                <div class="inner">
+                    <strong></strong>
+                    <span>small circle</span>
+                </div>
+            </figure>
+
+            <div class="wrap">
+                <!-- mockup -->
+                <div class="mock back-to-position to-right delay-0">
+                    <div class="pc-wrap">
+                        <img src="img/mockup-pc.png" alt="pc목업" class="pc">
+                        <figure class="pc_cover">
+                            <img src="img/mockup/Starbucks-PC.jpg" alt="Starbucks PC화면">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- Starbucks 설명 -->
+                <div class="info">
+                    <div class="description back-to-position to-left delay-0">
+                        <div class="web_title">
+                            <p>PC Web - clone coding</p>
+                            <h2>Starbucks</h2>
+                        </div>
+                        <p class="m_hide">
+                            기존의 스타벅스 pc형 웹을 그대로 표현하고자
+                            javascript와 lodash, gsap, Swiper Slider 등을 이용해 제작하였습니다. 
+                        </p>
+                    <div class="tool">
+                        <h3>TOOL</h3>
+                        <P>
+                            HTML5 / CSS3 / javascript 
+                        </P>
+                    </div>
+                    <div class="hue">
+                        <h3>COLOR</h3>
+                        <span class="color">
+                            <span style="background: #007042;"></span>
+                            <span style="background: #2C2A29;"></span>
+                            <span style="background: #F6F5EF;"></span>
+                        </ul>
+                    </div>
+                    <div class="font">
+                        <h3>FONT</h3>
+                        <span>Noto Sans KR</span>
+                    </div>
+                    <div class="work">
+                        <h3>WORK</h3>
+                        <span>개인작업100%(2주)</span>
+                    </div>
+                    </div>
+
+                    <!-- 버튼 -->
+                    <ul class="btns back-to-position to-left delay-1">
+                        <li>
+                            <a href="https://aw0605.github.io/STARBUCKS/" class="link_btn" target="_blank">VIEW ON WEB</a>
+                        </li>
+                        <li class="styleGuide">
+                            <a href="#modal5" class="btn">DESIGN GUIDE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal" id="modal5">
+                <div class="modalcont modalcont5">
+                    <img src="img/modal/Starbucks.jpg" alt="Starbucks">
+                </div>
+            </div>
+        </section>
+
+        <!-- Work6 - DESIGN -->
+        <section class="section project06">
+            <!-- 날아가는 원 -->
+            <div class="gooey">
+                gooey filter
+            </div>
+
+            <div class="wrap"> 
+                <h2 class="mo">DESIGN</h2>
+
+                <!-- design img 버튼 -->
+                <div class="design"> 
+                    <a href="#modal5" class="dbtn1">
+                        <img src="img/design/design1-resonance.jpg" alt="resonance">
+                    </a>
+                    <h2 class="pc">DESIGN</h2>
+                    <a href="#modal6" class="dbtn2">
+                        <img src="img/design/design2-odense.jpg" alt="odense">
+                    </a>
+                    <a href="#modal7" class="dbtn3">
+                        <img src="img/design/design3-youtube_thum.jpg" alt="youtube-thumbnail">
+                    </a>
+                    <a href="#modal8" class="dbtn4">
+                        <img src="img/design/design-coming_soon.jpg" alt="coming-soon">
+                    </a>
+                    <a href="#modal9" class="dbtn5">
+                        <img src="img/design/design-coming_soon.jpg" alt="coming-soon">
+                    </a>
+                </div>
+            </div>
+            
+            <!-- modal -->
+            <div class="dmodal1 modal" id="modal6">
+                <div class="modalcont modalcont6">
+                    <img src="img/modal/resonance.jpg" alt="resonance">
+                </div>
+            </div>
+            <div class="dmodal2 modal" id="modal7">
+                <div class="modalcont modalcont7">
+                    <img src="img/modal/odense.jpg" alt="odense">
+                </div>
+            </div>
+            <div class="dmodal3 modal modal_y" id="modal8">
+                <div class="modalcont modalcont8">
+                    <img src="img/modal/youtube-thumbnail.jpg" alt="youtube-thumbnail">
+                </div>
+            </div>
+            <div class="dmodal4 modal modal_y" id="modal9">
+                <div class="modalcont modalcont9">
+                    <img src="img/modal/coming-soon(1).jpg" alt="coming-soon">
+                </div>
+            </div>
+            <div class="dmodal5 modal modal_y" id="modal10">
+                <div class="modalcont modalcont10">
+                    <img src="img/modal/coming-soon(2).jpg" alt="coming-soon">
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile -->
+        <section class="section profile scroll-spy">
+            <div class="wrap">
+                <div class="me back-to-position to-right delay-0">
+                    <img src="img/me.png" alt="me" class="floating2">
+                    <div class="nb">
+                        <span><strong>조예린</strong>(Jo Yerin)</span>
+                        <span>1996.06.05</span>
+                    </div>
+
+                    <!-- contact -->
+                    <div class="contact">
+                        <a href="tel:010-5091-0433" class="phone">
+                            <span class="material-icons">
+                                call
+                                </span>
+                            <span>010-5091-0433</span>
+                        </a>
+                        <a href="mailto:aw0605@naver.com" class="email">
+                            <span class="material-icons">
+                                email
+                            </span>
+                            <span>aw0605@naver.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="about back-to-position to-left delay-1">
+                    <!-- 학력 -->
+                    <div class="education">
+                        <h2>Education<span class="line"></span></h2>
+                        <table>
+                            <tr>
+                                <td>2020.02</td>
+                                <td>수원대학교 생명과학과 졸업</td>
+                            </tr>
+                            <tr>
+                                <td>2022.05</td>
+                                <td>
+                                    안산 그린컴퓨터 아카데미<br>
+                                    (PWA 프론트엔드 개발 과정) 수료
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- 자격증 -->
+                    <div class="certificate">
+                        <h2>Certificate<span class="line"></span></h2>
+                        <p>컴퓨터 활용 능력 2급</p>
+                        <p>ITQ(word/exel/powerpoint-A/A/A)</p>
+                    </div>
+
+                    <!-- skill -->
+                    <div class="skill">
+                        <h2>Skill<span class="line"></span></h2>
+                        <ul class="skill-container col-12 col-md-6 col-lg-4">
+                            <li>
+                                <svg class="skill-circle" height="40" width="60">
+                                    <circle cx="30" cy="-20" r="17" style="stroke-dasharray: 95px;" transform="translate(50,50) rotate(-90)"></circle>
+                                    <text class="score" x="25" y="24" fill="#fff" font-size="10">90</text>
+                                    <p>HTML5</p>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="skill-circle" height="40" width="60">
+                                    <circle cx="30" cy="-20" r="17" style="stroke-dasharray: 90px;" transform="translate(50,50) rotate(-90)"></circle>
+                                    <text class="score" x="25" y="24" fill="#fff" font-size="10">80</text>
+                                    <p>CSS3</p>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="skill-circle" height="40" width="60">
+                                    <circle cx="30" cy="-20" r="17" style="stroke-dasharray: 80px;" transform="translate(50,50) rotate(-90)"></circle>
+                                    <text class="score" x="25" y="24" fill="#fff" font-size="10">75</text>
+                                    <p>JAVASCRIPT</p>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="skill-circle" height="40" width="60">
+                                    <circle cx="30" cy="-20" r="17" style="stroke-dasharray: 90px;" transform="translate(50,50) rotate(-90)"></circle>
+                                    <text class="score" x="25" y="24" fill="#fff" font-size="10">80</text>
+                                    <p>J-Query</p>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="skill-circle" height="40" width="60">
+                                    <circle cx="30" cy="-20" r="17" style="stroke-dasharray: 68px;"     transform="translate(50,50) rotate(-90)"></circle>
+                                    <text class="score" x="25" y="24" fill="#fff" font-size="10">60</text>
+                                    <p>REACT</p>
+                                </svg>    
+                            </li>
+                            <li>
+                                <svg class="skill-circle" height="40" width="60">
+                                    <circle cx="30" cy="-20" r="17" style="stroke-dasharray: 68px;"     transform="translate(50,50) rotate(-90)"></circle>
+                                    <text class="score" x="25" y="24" fill="#fff" font-size="10">60</text>
+                                    <p>SCSS</p>
+                                </svg>
+                            </li>
+                    </ul>
+                    <ul class="skill-container col-12 col-md-6 col-lg-4">
+                            <li>
+                                <svg class="skill-circle" height="40" width="60">
+                                    <circle cx="30" cy="-20" r="17" style="stroke-dasharray: 90px;" transform="translate(50,50) rotate(-90)"></circle>
+                                    <text class="score" x="25" y="24" fill="#fff" font-size="10">80</text>
+                                    <p>PS</p>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="skill-circle" height="40" width="60">
+                                    <circle cx="30" cy="-20" r="17" style="stroke-dasharray: 90px;"     transform="translate(50,50) rotate(-90)"></circle>
+                                    <text class="score" x="25" y="24" fill="#fff" font-size="10">80</text>
+                                    <p>AI</p>
+                                </svg>
+                            </li>
+                            <li>
+                                <svg class="skill-circle" height="40" width="60">
+                                    <circle cx="30" cy="-20" r="17" style="stroke-dasharray: 95px;"     transform="translate(50,50) rotate(-90)"></circle>
+                                    <text class="score" x="25" y="24" fill="#fff" font-size="10">90</text>
+                                    <p>Figma</p>
+                                </svg>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script type="text/javascript">    
+        var myFullpage = new fullpage('#fullpage', {
+            anchors: ['home', 'project01', 'project02', 'project03', 'project04', 'project05', 'project06', 'profile'],
+            navigation: true,
+            menu: '#menu'
+        });
+
+        // year
+        var year = new Date().getFullYear();
+        document.getElementById('year').innerHTML = year;
+    </script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
